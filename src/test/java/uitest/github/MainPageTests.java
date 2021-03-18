@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPageTests extends AbstractBase {
 
     @Test
-    void mainPageSearch() {
+    void mainPageSearchTest() {
         open("/");
 
         $(byName("q")).setValue("selenide").pressEnter();
@@ -19,7 +19,7 @@ public class MainPageTests extends AbstractBase {
     }
 
     @Test
-    void signUpViaEmailExist() {
+    void signUpViaEmailExistTest() {
         open("/");
 
         $("#user_email_control").shouldBe(visible);
@@ -27,7 +27,7 @@ public class MainPageTests extends AbstractBase {
     }
 
     @Test
-    void signInButtonExist() {
+    void signInButtonExistTest() {
         open("/");
 
         $$("a.HeaderMenu-link").findBy(text("Sign in")).click();
@@ -35,7 +35,7 @@ public class MainPageTests extends AbstractBase {
     }
 
     @Test
-    void signUpButtonExist() {
+    void signUpButtonExistTest() {
         open("/");
 
         $$("a.HeaderMenu-link").findBy(text("Sign up")).click();
