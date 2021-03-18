@@ -1,5 +1,6 @@
 package uitest.github;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import uitest.AbstractBase;
 
@@ -11,6 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPageTests extends AbstractBase {
 
     @Test
+    @DisplayName("Search 'selenide'")
     void mainPageSearchTest() {
         open("/");
 
@@ -19,6 +21,7 @@ public class MainPageTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("Input and button for email sign up exist")
     void signUpViaEmailExistTest() {
         open("/");
 
@@ -27,6 +30,7 @@ public class MainPageTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("Sign in button exist")
     void signInButtonExistTest() {
         open("/");
 
@@ -35,6 +39,7 @@ public class MainPageTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("Sign up button exist")
     void signUpButtonExistTest() {
         open("/");
 

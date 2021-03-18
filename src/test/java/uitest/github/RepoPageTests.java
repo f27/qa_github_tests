@@ -1,5 +1,6 @@
 package uitest.github;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import uitest.AbstractBase;
 
@@ -11,6 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class RepoPageTests extends AbstractBase {
 
     @Test
+    @DisplayName("/selenide/selenide has Wiki->Soft assertions->JUnit5 code")
     void wikiInSelenideTest(){
         open("/selenide/selenide");
 
@@ -21,6 +23,7 @@ public class RepoPageTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("/f27/qa_github_tests doesn't have Wiki")
     void wikiInMyProjectTest(){
         open("/f27/qa_github_tests");
 
@@ -29,6 +32,7 @@ public class RepoPageTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("Selenide repo has Issue tab and amount of issues correct")
     void issuesInSelenideTest(){
         open("/selenide/selenide");
 
@@ -39,6 +43,7 @@ public class RepoPageTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("Andrei Solntsev in first position of contributors")
     void contributorsTest(){
         open("/selenide/selenide");
 

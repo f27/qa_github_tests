@@ -1,5 +1,6 @@
 package uitest.github;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import uitest.AbstractBase;
 
@@ -10,6 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchTests extends AbstractBase {
 
     @Test
+    @DisplayName("Can search in repo")
     void searchInRepoTest(){
         open("/selenide/selenide");
 
@@ -20,6 +22,7 @@ public class SearchTests extends AbstractBase {
     }
 
     @Test
+    @DisplayName("Can search in org")
     void searchInOrgTest(){
         open("/selenide/selenide");
 
